@@ -47,14 +47,14 @@ export default function NavBar() {
             />
           </div>
         </div>
-        <div className="flex gap-5 justify-end w-full mr-5 ">
-          <div className="flex rounded-full bg-gray-500">
-            <img src={images.chat} alt="Messages" className=" w-7 " />
+        <div className="flex gap-5 justify-end w-full mr-5 mt-2">
+          <div className="rounded-full bg-gray-500 w-11 h-11">
+            <img src={images.chat} alt="Messages" className="w-7" />
           </div>
-          <div className="flex rounded-full bg-gray-500 p-4">
+          <div className=" rounded-full bg-gray-500 w-11 h-11">
             <img src={images.bell} alt="Notification Bell" className="w-6" />
           </div>
-          <div className="flex rounded-full bg-gray-500 p-4">
+          <div className=" rounded-full bg-gray-500 w-11 h-11">
             <img src={images.settings} alt="settings" className=" w-6" />
           </div>
           <div className="flex">
