@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-export default function signup() {
+export default function login() {
     return (
         <>
         <div>
-            <p>Code Culture</p>
+            
         </div>
         </>
     )

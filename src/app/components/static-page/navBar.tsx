@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+
 import images from "../../../../public/images";
 
 export default function NavBar() {
