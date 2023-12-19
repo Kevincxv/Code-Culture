@@ -37,7 +37,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
+        <div className="flex ml-6 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
           <Link href="questions">
             <span className="flex items-center">
               <img src={images.question} alt="" className="ml-2 w-9" />
@@ -49,7 +49,7 @@ export default function sidePanel() {
           <Link href="media">
             <span className="flex items-center">
               <img src={images.play} alt="" className="ml-2 w-11" />
-              <p className="ml-2 text-white">Media</p>
+              <p className="ml-1 text-white">Media</p>
             </span>
           </Link>
         </div>
@@ -65,7 +65,7 @@ export default function sidePanel() {
           <Link href="bookmark">
             <span className="flex items-center">
               <img src={images.bookmark} alt="" className="ml-3 w-8" />
-              <p className="ml-2 text-white">Bookmarks</p>
+              <p className="ml-3 text-white">Bookmarks</p>
             </span>
           </Link>
         </div>
@@ -73,7 +73,7 @@ export default function sidePanel() {
           <Link href="premium">
             <span className="flex items-center">
               <img src={images.logo} alt="" className="ml-1 w-12" />
-              <p className="ml-2 text-white">Premium</p>
+              <p className="ml-1 text-white">Premium</p>
             </span>
           </Link>
         </div>

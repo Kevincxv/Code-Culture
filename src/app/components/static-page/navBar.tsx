@@ -30,7 +30,7 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <div className="flex gap-1 justify-center w-full">
+        <div className="flex gap-5 justify-center w-full">
           <div
             onClick={() => handleClick("home")}
             className={`${
@@ -140,7 +140,15 @@ export default function NavBar() {
             }`}
           >
             <Link href="/">
-              <img src={selectedIcon === "settings" ? images.settingsGreen : images.settings} alt="settings" className="w-5" />
+              <img
+                src={
+                  selectedIcon === "settings"
+                    ? images.settingsGreen
+                    : images.settings
+                }
+                alt="settings"
+                className="w-5"
+              />
             </Link>
           </div>
           <div className="flex justify-center">
