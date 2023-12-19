@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function sidePanel() {
   return (
     <>
-      <div className="flex-col mt-5">
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+      <div className="flex-col mt-2">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
           <Link href="profile">
             <span className="flex items-center">
               <img src={images.profile} alt="" className="ml-3 w-9" />
@@ -13,7 +13,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
           <Link href="groups">
             <span className="flex items-center">
               <img src={images.groupColor} alt="" className="ml-3 w-9" />
@@ -21,7 +21,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
           <Link href="post">
             <span className="flex items-center">
               <img src={images.addButton} alt="" className="ml-3 w-9" />
@@ -29,7 +29,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
           <Link href="questions">
             <span className="flex items-center">
               <img src={images.question} alt="" className="ml-2 w-9" />
@@ -37,7 +37,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
           <Link href="media">
             <span className="flex items-center">
               <img src={images.play} alt="" className="ml-2 w-11" />
@@ -45,7 +45,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
           <Link href="events">
             <span className="flex items-center">
               <img src={images.schedule} alt="" className="ml-3 w-9" />
@@ -53,7 +53,7 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
           <Link href="bookmark">
             <span className="flex items-center">
               <img src={images.bookmark} alt="" className="ml-3 w-8" />
@@ -61,14 +61,14 @@ export default function sidePanel() {
             </span>
           </Link>
         </div>
-          <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-80 h-16 rounded">
-        <Link href="premium">
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16 ">
+          <Link href="premium">
             <span className="flex items-center">
-                <img src={images.logo} alt="" className="ml-1 w-12" />
-                <p className="ml-2 text-white">Premium</p>
+              <img src={images.logo} alt="" className="ml-1 w-12" />
+              <p className="ml-2 text-white">Premium</p>
             </span>
-        </Link>
-          </div>
+          </Link>
+        </div>
       </div>
     </>
   );

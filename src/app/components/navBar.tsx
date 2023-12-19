@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <>
-      <div className="flex flex-row border-b border-gray-500 mt-1">
+      <div className="flex flex-row border-b border-gray-500 p-1">
         <div className="flex gap-2 items-center justify-start w-full ml-6 ">
           <div className="">
             <Link href="/">
@@ -28,7 +28,7 @@ export default function NavBar() {
               <img
                 src={images.homepage}
                 alt="Home Page"
-                className="transition duration-300 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-16 p-4 rounded"
+                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded"
               />
             </Link>
           </div>
@@ -37,7 +37,7 @@ export default function NavBar() {
               <img
                 src={images.media}
                 alt="Media Page"
-                className="transition duration-300 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-16 p-4 rounded "
+                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
             </Link>
           </div>
@@ -46,7 +46,7 @@ export default function NavBar() {
               <img
                 src={images.code}
                 alt="Code Page"
-                className="transition duration-300 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-16 p-4 rounded "
+                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
             </Link>
           </div>
@@ -55,7 +55,7 @@ export default function NavBar() {
               <img
                 src={images.group}
                 alt="Group Page"
-                className="transition duration-300 ease-in-out hover:bg-gray-500 hover:bg-opacity-20 w-16 p-4 rounded "
+                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
             </Link>
           </div>
