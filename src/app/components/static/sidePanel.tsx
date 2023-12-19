@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function sidePanel() {
   return (
     <>
-      <div className="flex-col mt-2">
+      <div className="flex-col mt-2 font-bold">
         <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
           <Link href="profile">
             <span className="flex items-center">

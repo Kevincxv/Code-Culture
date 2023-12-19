@@ -20,7 +20,7 @@ export default function NavBar() {
               <img src={images.logo} alt="Code Culture Logo" className="w-14" />
             </Link>
           </div>
-          <div className=" relative">
+          <div className="font-medium relative">
             <input
               type="text"
               placeholder="Search Code Culture"
