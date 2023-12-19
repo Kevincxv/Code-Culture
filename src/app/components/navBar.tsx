@@ -60,7 +60,7 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-5 justify-end w-full mr-5 mt-2">
+        <div className="flex gap-5 justify-end w-full mr-5 mt-3">
           <div className="flex rounded-full bg-gray-500 w-9 h-9 items-center justify-center">
             <Link href="/messages">
               <img src={images.chat} alt="Messages" className="w-5" />
@@ -76,12 +76,12 @@ export default function NavBar() {
               <img src={images.settings} alt="settings" className="w-5" />
             </Link>
           </div>
-          <div className="flex">
+          <div className="flex justify-center">
             <Link href="profile">
               <img
                 src={images.profile}
                 alt="Profile Picture"
-                className="w-6 "
+                className="w-9 "
               />
             </Link>
           </div>
