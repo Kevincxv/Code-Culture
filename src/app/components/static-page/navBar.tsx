@@ -1,10 +1,10 @@
-import images from "../../../public/images";
+import images from "../../../../public/images";
 import Link from "next/link";
 
 export default function NavBar() {
   return (
     <>
-      <div className="flex flex-row border-b border-gray-500 p-1">
+      <div className="flex flex-row border-b border-custom p-1">
         <div className="flex gap-2 items-center justify-start w-full ml-6 ">
           <div className="">
             <Link href="/">
@@ -60,7 +60,7 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-5 justify-end w-full mr-5 mt-3">
+        <div className="flex gap-3 justify-end w-full mr-5 mt-3">
           <div className="flex rounded-full bg-gray-500 w-9 h-9 items-center justify-center">
             <Link href="/messages">
               <img src={images.chat} alt="Messages" className="w-5" />

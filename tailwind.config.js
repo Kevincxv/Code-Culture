@@ -7,6 +7,9 @@ module.exports = {
         'default-bg': '#1A1E22', // Set default background color
         'custom-hover': 'rgba(252, 252, 252, 0.20)',
       },
+      borderColor: {
+        custom: '#333B43', // Custom border color
+      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], // Set default font
       },
