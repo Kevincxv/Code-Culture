@@ -19,13 +19,13 @@ export default function NavBar() {
               <img src={images.logo} alt="Code Culture Logo" className="w-14" />
             </Link>
           </div>
-          <div className="relative">
+          <div className=" relative">
             <input
               type="text"
               placeholder="Search Code Culture"
-              className="bg-gray-500 text-gray-200 rounded-full py-1 px-8 focus:outline-none caret-white"
+              className="bg-gray-500 text-gray-200 rounded-full py-2 px-8 focus:outline-none caret-white"
             />
-            <div className="absolute top-1 left-0 mt-1 ml-2">
+            <div className="absolute top-2 left-0 mt-1 ml-2">
               <img src={images.search} alt="Search Icon" className="w-4" />
             </div>
           </div>
