@@ -14,6 +14,14 @@ export default function sidePanel() {
           </Link>
         </div>
         <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
+          <Link href="friends">
+            <span className="flex items-center">
+              <img src={images.friends} alt="" className="ml-3 w-8"/>
+              <p className="ml-3 text-white">Friends</p>
+            </span>
+          </Link>
+        </div>
+        <div className="flex ml-5 items-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
           <Link href="groups">
             <span className="flex items-center">
               <img src={images.groupColor} alt="" className="ml-3 w-9" />
