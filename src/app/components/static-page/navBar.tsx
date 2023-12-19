@@ -1,7 +1,15 @@
-import images from "../../../../public/images";
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import images from "../../../../public/images";
 
 export default function NavBar() {
+  const [selectedIcon, setselectedIcon] = useState<string | null>(null); // State to track if the icon is active
+
+  const handleClick = (iconName: string) => {
+    setselectedIcon(selectedIcon === iconName ? null : iconName); // Toggle the active state
+  };
+
   return (
     <>
       <div className="flex flex-row border-b border-custom p-1">
@@ -23,37 +31,65 @@ export default function NavBar() {
           </div>
         </div>
         <div className="flex gap-1 justify-center w-full">
-          <div>
-            <Link href="/home-page">
+          <div
+            onClick={() => handleClick("home")}
+            className={`${
+              selectedIcon === "home" ? "border-b-2 border-[#01DF67]" : ""
+            }`}
+          >
+            <Link href="/">
               <img
-                src={images.homepage}
+                src={
+                  selectedIcon === "home"
+                    ? images.homepageGreen
+                    : images.homepage
+                }
                 alt="Home Page"
-                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded"
+                className={`transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded`}
               />
             </Link>
           </div>
-          <div>
-            <Link href="/media-page">
+          <div
+            onClick={() => handleClick("media")}
+            className={`${
+              selectedIcon === "media" ? "border-b-2 border-[#01DF67]" : ""
+            }`}
+          >
+            <Link href="/">
               <img
-                src={images.media}
+                src={
+                  selectedIcon === "media" ? images.mediaGreen : images.media
+                }
                 alt="Media Page"
                 className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
             </Link>
           </div>
-          <div>
-            <Link href="/code-page">
+          <div
+            onClick={() => handleClick("code")}
+            className={`${
+              selectedIcon === "code" ? "border-b-2 border-[#01DF67]" : ""
+            }`}
+          >
+            <Link href="/">
               <img
-                src={images.code}
+                src={selectedIcon === "code" ? images.codeGreen : images.code}
                 alt="Code Page"
                 className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
             </Link>
           </div>
-          <div>
-            <Link href="/group-page">
+          <div
+            onClick={() => handleClick("group")}
+            className={`${
+              selectedIcon === "group" ? "border-b-2 border-[#01DF67]" : ""
+            }`}
+          >
+            <Link href="/">
               <img
-                src={images.group}
+                src={
+                  selectedIcon === "group" ? images.groupGreen : images.group
+                }
                 alt="Group Page"
                 className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded "
               />
@@ -61,19 +97,50 @@ export default function NavBar() {
           </div>
         </div>
         <div className="flex gap-3 justify-end w-full mr-5 mt-3">
-          <div className="flex rounded-full bg-gray-500 w-9 h-9 items-center justify-center">
-            <Link href="/messages">
-              <img src={images.chat} alt="Messages" className="w-5" />
+          <div
+            onClick={() => handleClick("messages")}
+            className={`flex rounded-full w-9 h-9 items-center justify-center ${
+              selectedIcon === "messages"
+                ? "bg-[rgba(1,223,103,0.20)]"
+                : "bg-gray-500"
+            }`}
+          >
+            <Link href="/">
+              <img
+                src={
+                  selectedIcon === "messages" ? images.chatGreen : images.chat
+                }
+                alt="Messages"
+                className="w-5"
+              />
             </Link>
           </div>
-          <div className="flex rounded-full bg-gray-500 w-9 h-9 items-center justify-center">
-            <Link href="/notifications">
-              <img src={images.bell} alt="Notification Bell" className="w-5" />
+          <div
+            onClick={() => handleClick("bell")}
+            className={`flex rounded-full w-9 h-9 items-center justify-center ${
+              selectedIcon === "bell"
+                ? "bg-[rgba(1,223,103,0.20)]"
+                : "bg-gray-500"
+            }`}
+          >
+            <Link href="/">
+              <img
+                src={selectedIcon === "bell" ? images.bellGreen : images.bell}
+                alt="Notification Bell"
+                className="w-5"
+              />
             </Link>
           </div>
-          <div className="flex rounded-full bg-gray-500 w-9 h-9 items-center justify-center">
-            <Link href="settings">
-              <img src={images.settings} alt="settings" className="w-5" />
+          <div
+            onClick={() => handleClick("settings")}
+            className={`flex rounded-full w-9 h-9 items-center justify-center ${
+              selectedIcon === "settings"
+                ? "bg-[rgba(1,223,103,0.20)]"
+                : "bg-gray-500"
+            }`}
+          >
+            <Link href="/">
+              <img src={selectedIcon === "settings" ? images.settingsGreen : images.settings} alt="settings" className="w-5" />
             </Link>
           </div>
           <div className="flex justify-center">
