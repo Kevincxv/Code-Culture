@@ -19,33 +19,34 @@ export default function signup() {
             around the world
           </p>
         </div>
+        <div className="flex flex-col justify-end bg-[#333B43] rounded">
+          <div className="flex flex-col ml-3 mt-3 mb-3">
+            <label className="font-semibold text-white">Username</label>
+            <input
+              type="text"
+              required
+              className="w-32 h-7 rounded bg-[#718090] text-white font-medium"
+            ></input>
+          </div>
+          <div className="flex flex-col ml-3 mt-3 mb-3">
+            <label className="font-semibold text-white ">Email</label>
+            <input
+              type="email"
+              required
+              className="w-32 h-7 rounded bg-[#718090] text-white font-medium"
+            />
+          </div>
+          <div className="flex flex-col ml-3 mt-3 mb-3">
+            <label className="font-semibold text-white">Password</label>
+            <input
+              type="password"
+              required
+              className="w-32 h-7 rounded bg-[#718090] text-white font-normal"
+            />
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col justify-end bg-[#333B43] rounded">
-        <div className="flex flex-col ml-3 mt-3 mb-3">
-          <label className="font-semibold text-white">Username</label>
-          <input
-            type="text"
-            required
-            className="w-32 h-7 rounded bg-[#718090] text-white font-medium"
-          ></input>
-        </div>
-        <div className="flex flex-col ml-3 mt-3 mb-3">
-          <label className="font-semibold text-white ">Email</label>
-          <input
-            type="email"
-            required
-            className="w-32 h-7 rounded bg-[#718090] text-white font-medium"
-          />
-        </div>
-        <div className="flex flex-col ml-3 mt-3 mb-3">
-          <label className="font-semibold text-white">Password</label>
-          <input
-            type="password"
-            required
-            className="w-32 h-7 rounded bg-[#718090] text-white font-normal"
-          />
-        </div>
-      </div>
+
     </>
   );
 }
