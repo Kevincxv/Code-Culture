@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <div>
-        <NavBar />
+        {/* <NavBar />
         <SidePanel />
-        <Footer />
+        <Footer /> */}
         {/* <SignUp /> */}
       </div>
     </>

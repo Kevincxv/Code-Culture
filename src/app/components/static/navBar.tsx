@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-
+import { usePathname } from 'next/navigation';
+import classnames from 'classnames'
 import images from "../../../../public/images";
 
 export default function NavBar() {
@@ -42,8 +43,8 @@ export default function NavBar() {
               <img
                 src={
                   selectedIcon === "home"
-                    ? images.homepageGreen
-                    : images.homepage
+                    ? images.dashboardGreen
+                    : images.dashboard
                 }
                 alt="Home Page"
                 className={`transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded`}
@@ -109,7 +110,7 @@ export default function NavBar() {
             <Link href="/">
               <img
                 src={
-                  selectedIcon === "messages" ? images.chatGreen : images.chat
+                  selectedIcon === "messages" ? images.messagesGreen : images.messages
                 }
                 alt="Messages"
                 className="w-5"
@@ -126,7 +127,7 @@ export default function NavBar() {
           >
             <Link href="/">
               <img
-                src={selectedIcon === "bell" ? images.bellGreen : images.bell}
+                src={selectedIcon === "bell" ? images.notificationGreen : images.notification}
                 alt="Notification Bell"
                 className="w-5"
               />
