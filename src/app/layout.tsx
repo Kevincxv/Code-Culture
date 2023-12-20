@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import NavTest from './components/static/navTest'
+import NavTest from './components/navComponents/navTest'
 
 export const metadata: Metadata = {
   title: 'Code Culture',
