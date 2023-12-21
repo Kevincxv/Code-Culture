@@ -32,7 +32,7 @@ export default function Center({ currentPath }: any) {
 
   return (
     <>
-      <ul className="flex ">
+      <ul className="flex">
         {center.map((link) => (
           <li key={link.href}>
             <div

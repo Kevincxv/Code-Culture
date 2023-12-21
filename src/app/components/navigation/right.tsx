@@ -26,7 +26,7 @@ export default function Right({ currentPath }: any) {
 
   return (
     // Dynamically iterating and rendering the buttons for the settings where we are tying the configurations to each of the keys in the array.
-    <ul className="flex gap-2">
+    <ul className="flex gap-2 pr-4">
       {right.map((link) => (
         <li key={link.href}>
           <div
