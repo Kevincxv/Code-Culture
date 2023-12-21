@@ -30,7 +30,7 @@ export default function Center() {
                             <Image
                                 src={selectedIcon === link.icon ? link.iconGreen : link.icon}
                                 alt={`${link.label} Page`}
-                                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded pointer-events-none"
+                                className="transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover w-16 p-4 rounded"
                                 width={100} height={100}
                             />
                         </Link>
