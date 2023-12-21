@@ -17,7 +17,7 @@ export default function sideBar() {
   
   return (
         <>
-        <aside className="flex mt-3">
+        <aside className="fixed mt-1">
           <ul>
             {sideBar.map((link) =>
             <li key={link.href}>

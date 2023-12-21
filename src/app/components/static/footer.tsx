@@ -1,47 +1,61 @@
 import Link from "next/link";
+import classNames from "classnames";
 
-export default function footer() {
+export default function footer({ currentPath }: any) {
+  const top = [
+    { label: "About", href: "/about" },
+    { label: "Help Center", href: "/help-center" },
+    { label: "Content Policy", href: "/content-policy" },
+  ];
+
+  const middle = [
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Code of Conduct", href: "/code-of-conduct" },
+    { label: "More", href: "/more" },
+  ];
+
+  const bottom = [
+    { label: "Code Culture, Inc 2023. All rights reserved", href: "/rights" },
+  ];
+
   return (
-    <>
-      <div className="absolute bottom-3 left-0 w-full">
-        <div className="font-medium">
-          <div className="flex justify-start ml-3 gap-2">
-            <Link href="/">
-              <p className="text-[#B7B7B7] text-xs hover:underline">About</p>
-            </Link>
-            <Link href="/">
-              <p className=" text-[#B7B7B7] text-xs hover:underline">Help Center</p>
-            </Link>
-            <Link href="/">
-              <p className=" text-[#B7B7B7] text-xs hover:underline">
-                Content Policy
-              </p>
-            </Link>
-          </div>
-          <div className="flex ml-3 gap-2">
-            <Link href="/">
-              <p className=" text-[#B7B7B7] text-xs hover:underline">
-                Code of Conduct
-              </p>
-            </Link>
-            <Link href="/">
-              <p className=" text-[#B7B7B7] text-xs hover:underline">
-                Terms of Service
-              </p>
-            </Link>
-            <Link href="/">
-              <p className=" text-[#B7B7B7] text-xs hover:underline">More</p>
-            </Link>
-          </div>
-          <div className="flex ml-3 border-t border-gray-700 w-64">
-            <Link href="/">
-              <p className=" w-72 text-[#B7B7B7] text-xs hover:underline">
-                Code Culture, Inc &#x40; 2023. All rights reserved
-              </p>
-            </Link>
-          </div>
-        </div>
+    <footer className="fixed bottom-2 left-3 flex flex-col gap-1 font-semibold text-xs">
+      <div className="flex space-x-2">
+        {top.map((link) => (
+          <Link key={link.href} href={link.href}>
+            <p className={`hover:underline hover:text-[#646464] ${classNames({
+              "text-[#646464]": currentPath === link.href,
+              "text-[#B7B7B7]": currentPath !== link.href,
+            })}`}>
+              {link.label}
+            </p>
+          </Link>
+        ))}
       </div>
-    </>
+      <div className="flex space-x-2">
+        {middle.map((link) => (
+          <Link key={link.href} href={link.href}>
+            <p className={`hover:underline hover:text-[#646464] ${classNames({
+              "text-[#646464]": currentPath === link.href,
+              "text-[#B7B7B7]": currentPath !== link.href,
+            })}`}>
+              {link.label}
+            </p>
+          </Link>
+        ))}
+      </div>
+      <div className="flex border-t border-[#2C2C2C]">
+        {bottom.map((link) => (
+          <Link key={link.href} href={link.href}>
+            <p className={`hover:underline hover:text-[#646464] ${classNames({
+              "text-[#646464]": currentPath === link.href,
+              "text-[#B7B7B7]": currentPath !== link.href,
+            })}`}>
+              {link.label}
+            </p>
+          </Link>
+        ))}
+      </div>
+    </footer>
   );
 }
