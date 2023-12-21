@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import NavTest from './components/static/navTest'
+import NavBar from './components/navigation/navBar'
 
 export const metadata: Metadata = {
   title: 'Code Culture',
@@ -12,7 +12,7 @@ export default function RootLayout({ children,}: {
   return (
     <html lang="en">
       <body>
-        <NavTest />
+        <NavBar />
         {children}
       </body>
     </html>
