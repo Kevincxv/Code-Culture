@@ -12,7 +12,7 @@ export default function Right({ currentPath }: any) {
     },
     {
       label: "Notifications",
-      href: "/notification",
+      href: "/notifications",
       icon: images.notification,
       iconGreen: images.notificationGreen,
     },

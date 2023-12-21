@@ -6,7 +6,7 @@ export default function Center({ currentPath }: any) {
   const center = [
     {
       label: "Dashboard",
-      href: "/",
+      href: "/dashboard",
       icon: images.dashboard,
       iconGreen: images.dashboardGreen,
     },
