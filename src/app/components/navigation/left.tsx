@@ -5,7 +5,7 @@ export default function Left() {
   return (
     <>
       <div className="flex gap-4 pl-4 items-center">
-        <Link className="flex w-14" href="/">
+        <Link className="flex w-14" href="/dashboard">
           <img src={images.logo} draggable="false" />
         </Link>
         <form action="/search">
