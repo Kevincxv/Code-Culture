@@ -9,16 +9,8 @@ import Right from "./Right";
 export default function NavTest() {
   const currentPath = usePathname();
 
-  // React logic to keep track of which button is currently selected by the user
-  const [selectedIcon, setSelectedIcon] = useState<string | null>(null);
-
-  // function to transition the selected button within the navbar
-  const handleSelectIcon = (iconName: string) => {
-    setSelectedIcon(selectedIcon === iconName ? null : iconName);
-  };
-
   return (
-    <nav className="flex border-b border-[#333B43] h-16 items-center justify-between px-4">
+    <nav className="flex border-b border-[#333B43] h-16 items-center px-4 mt-2 pb-1.5">
       <div className="flex-1">
         <Left />
       </div>

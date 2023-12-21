@@ -11,9 +11,9 @@ export default function Left() {
             </Link>
             {/* Search bar */}
             <form action="/search" className="relative">
-                <Image src={images.search} className="absolute top-2.5 left-3 w-5" alt={""} width={20} height={20} />
+                <Image src={images.search} className="absolute top-2.5 left-3 w-5" alt={""} width={20} height={20} draggable={false} />
                 <input
-                    className="rounded-full bg-[#718090] text-[#BDBDBD] font-medium focus:outline-none focus:text-white caret-white py-2 px-12"
+                    className="rounded-full bg-[#718090] text-[#BDBDBD] font-medium focus:outline-none focus:text-white caret-white py-2 px-12 focus:shadow-lg"
                     type="text"
                     placeholder="Search Code Culture"
                 />

@@ -17,7 +17,6 @@ export default function Center({ currentPath }: any) {
         <ul className="flex items-center">
             {center.map((link) => (
                 <li key={link.href}>
-
                     <div
                         className={classNames({
                             "border-b-2 border-[#01DF67]": currentPath === link.href,
