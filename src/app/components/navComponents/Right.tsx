@@ -18,18 +18,21 @@ export default function Right() {
     ]
 
     return (
-        <ul className="flex">
+        <ul className="flex items-center gap-2">
             {right.map((link) => (
                 <li className="flex items-center" key={link.href}>
                     <div
                         onClick={() => handleClick(link.icon)}
-                        className={`flex rounded-full w-9 h-9 items-center justify-center ${selectedIcon === link.icon ? "bg-[rgba(1,223,103,0.20)]" : "bg-[#4B5661]"}`}>
-                        <Link href={link.href}>
+                        className={`flex rounded-full w-9 h-9 items-center justify-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover ${selectedIcon === link.icon ? "bg-[rgba(1,223,103,0.20)]" : "bg-[#4B5661]"}`}>
+                        <Link
+                        href={link.href}
+                        >
                             <Image
                                 src={selectedIcon === link.icon ? link.iconGreen : link.icon}
                                 alt={`${link.label}Page`}
-                                className="w-6 pointer-events-none"
+                                className="w-6"
                                 width={100} height={100}
+                                draggable={false}
                             />
                         </Link>
                     </div>

@@ -5,8 +5,8 @@ import images from "../../../../public/images";
 export default function Left() {
     return (
         <div className="flex gap-2 pl-5 items-center">
-            <Link className="flex w-14" href="/">
-                <Image src={images.logo} alt={""} width={100} height={100} className="pointer-events-none" />
+            <Link className="flex w-14" href="/home">
+                <Image src={images.logo} alt={""} width={100} height={100} draggable={false} />
             </Link>
             <form action="/search" className="relative">
                 <Image src={images.search} className="absolute top-2.5 left-3 w-5" alt={""} width={20} height={20} />
