@@ -1,16 +1,8 @@
-'use client';
 import Link from "next/link";
 import Image from "next/image";
 import images from "../../../../public/images";
-import { useState } from "react";
 
-export default function Right() {
-    const [selectedIcon, setselectedIcon] = useState<string | null>(null); // State to track if the icon is active
-
-    const handleClick = (iconName: string) => {
-        setselectedIcon(selectedIcon === iconName ? null : iconName); // Toggle the active state
-    };
-
+export default function Right({ selectedIcon, onSelectIcon }: any) {
     const right = [
         { label: "Messages", href: "/messages", icon: images.messages, iconGreen: images.messagesGreen },
         { label: "Notifications", href: "/notification", icon: images.notification, iconGreen: images.notificationGreen },
@@ -22,7 +14,7 @@ export default function Right() {
             {right.map((link) => (
                 <li className="flex items-center" key={link.href}>
                     <div
-                        onClick={() => handleClick(link.icon)}
+                        onClick={() => onSelectIcon(link.icon)}
                         className={`flex rounded-full w-9 h-9 items-center justify-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover ${selectedIcon === link.icon ? "bg-[rgba(1,223,103,0.20)]" : "bg-[#4B5661]"}`}>
                         <Link
                         href={link.href}

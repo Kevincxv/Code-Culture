@@ -4,13 +4,7 @@ import Image from "next/image";
 import images from "../../../../public/images";
 import { useState } from "react";
 
-export default function Center() {
-    const [selectedIcon, setselectedIcon] = useState<string | null>(null); // State to track if the icon is active
-
-    const handleClick = (iconName: string) => {
-        setselectedIcon(selectedIcon === iconName ? null : iconName); // Toggle the active state
-    };
-
+export default function Center({ selectedIcon, onSelectIcon }: any) {
     const center = [
         { label: "Dashboard", href: "/home", icon: images.dashboard, iconGreen: images.dashboardGreen },
         { label: "Media", href: "/media", icon: images.media, iconGreen: images.mediaGreen },
@@ -23,7 +17,7 @@ export default function Center() {
             {center.map((link) => (
                 <li key={link.href}>
                     <div
-                        onClick={() => handleClick(link.icon)}
+                        onClick={() => onSelectIcon(link.icon)}
                         className={`${selectedIcon === link.icon ? "border-b-2 border-[#01DF67]" : "border-b-2 border-transparent"}`}
                     >
                         <Link href={link.href}>
