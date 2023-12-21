@@ -22,6 +22,12 @@ export default function Right({ currentPath }: any) {
       icon: images.settings,
       iconGreen: images.settingsGreen,
     },
+    {
+      label: "Profile",
+      href: "/profile",
+      icon: images.profile,
+      iconGreen: images.profile,
+    },
   ];
 
   return (
