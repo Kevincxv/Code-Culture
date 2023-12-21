@@ -1,11 +1,14 @@
 'use client';
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 import Left from "./Left";
 import Center from "./Center";
 import Right from "./Right";
 
 export default function NavTest() {
+  const currentPath = usePathname();
+
   // React logic to keep track of which button is currently selected by the user
   const [selectedIcon, setSelectedIcon] = useState<string | null>(null);
 
@@ -20,10 +23,10 @@ export default function NavTest() {
         <Left />
       </div>
       <div className="flex-1 justify-center hidden lg:flex">
-        <Center selectedIcon={selectedIcon} onSelectIcon={handleSelectIcon} />
+        <Center currentPath={currentPath} />
       </div>
       <div className="flex-1 flex justify-end">
-        <Right selectedIcon={selectedIcon} onSelectIcon={handleSelectIcon} />
+        <Right currentPath={currentPath} />
       </div>
     </nav>
   );

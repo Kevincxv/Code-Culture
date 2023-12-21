@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import images from "../../../../public/images";
+import classNames from "classnames";
 
-export default function Right({ selectedIcon, onSelectIcon }: any) {
+export default function Right({ currentPath }: any) {
     // Stored the configurations for each of the buttons within an array
     const right = [
         { label: "Messages", href: "/messages", icon: images.messages, iconGreen: images.messagesGreen },
@@ -16,13 +17,20 @@ export default function Right({ selectedIcon, onSelectIcon }: any) {
             {right.map((link) => (
                 <li className="flex items-center" key={link.href}>
                     <div
-                        onClick={() => onSelectIcon(link.icon)}
-                        className={`flex rounded-full w-9 h-9 items-center justify-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover ${selectedIcon === link.icon ? "bg-[rgba(1,223,103,0.20)]" : "bg-[#4B5661]"}`}>
+                        className={`flex rounded-full w-9 h-9 items-center justify-center transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover 
+                        ${classNames({
+                            "bg-[rgba(1,223,103,0.20)]": currentPath === link.href,
+                            "bg-[#4B5661]": currentPath !== link.href
+                        })}
+                        `}>
                         <Link
                         href={link.href}
                         >
                             <Image
-                                src={selectedIcon === link.icon ? link.iconGreen : link.icon}
+                                src={classNames({
+                                    [link.iconGreen]: currentPath === link.href,
+                                    [link.icon]: currentPath !== link.href
+                                })}
                                 alt={`${link.label}Page`}
                                 className="w-6"
                                 width={100} height={100}
