@@ -14,14 +14,14 @@ export default function NavTest() {
 
 
   return (
-    <nav className="flex space-x-5 border-b border-[#333B43] h-16 px-3 items-center justify-between">
-      <div className="flex items-center">
+    <nav className="flex border-b border-[#333B43] h-16 items-center justify-between">
+      <div className="flex">
         <Left />
       </div>
-      <div className="flex items-center">
+      <div className="flex">
         <Center />
       </div>
-      <div className="flex items-center">
+      <div className="flex">
         <Right />
       </div>
     </nav>

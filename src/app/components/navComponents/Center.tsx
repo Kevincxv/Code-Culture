@@ -19,7 +19,7 @@ export default function Center() {
     ];
 
     return (
-        <ul className="flex">
+        <ul className="flex items-center">
             {center.map((link) => (
                 <li key={link.href}>
                     <div
