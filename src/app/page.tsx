@@ -8,10 +8,6 @@ export default function Home() {
   return (
     <>
       <div>
-        {/* <NavBar />
-        <SidePanel />
-        <Footer /> */}
-        {/* <SignUp /> */}
       </div>
     </>
   );
