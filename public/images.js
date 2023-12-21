@@ -1,5 +1,5 @@
 const images = {
-  addButton: "/add-button.svg",
+  post: "/post.svg",
   arrow: "/arrow.svg",
   barGreen: "/bar-green.svg",
   bar: "/bar.svg",
@@ -26,7 +26,7 @@ const images = {
   media: "/media.svg",
   play: "/play.svg",
   question: "/question.svg",
-  schedule: "/schedule.svg",
+  events: "/events.svg",
   search: "/search.svg",
   settingsGreen: "/settings-green.svg",
   settings: "/settings.svg",
