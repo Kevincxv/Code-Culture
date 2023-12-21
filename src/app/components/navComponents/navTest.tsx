@@ -6,8 +6,10 @@ import Center from "./Center";
 import Right from "./Right";
 
 export default function NavTest() {
+  // React logic to keep track of which button is currently selected by the user
   const [selectedIcon, setSelectedIcon] = useState<string | null>(null);
 
+  // function to transition the selected button within the navbar
   const handleSelectIcon = (iconName: string) => {
     setSelectedIcon(selectedIcon === iconName ? null : iconName);
   };

@@ -1,10 +1,9 @@
-'use client';
 import Link from "next/link";
 import Image from "next/image";
 import images from "../../../../public/images";
-import { useState } from "react";
 
 export default function Center({ selectedIcon, onSelectIcon }: any) {
+    // Stored the configurations for each of the buttons within an array
     const center = [
         { label: "Dashboard", href: "/home", icon: images.dashboard, iconGreen: images.dashboardGreen },
         { label: "Media", href: "/media", icon: images.media, iconGreen: images.mediaGreen },
@@ -13,6 +12,7 @@ export default function Center({ selectedIcon, onSelectIcon }: any) {
     ];
 
     return (
+        // Dynamically iterating and rendering the buttons for the settings where we are tying the configurations to each of the keys in the array.
         <ul className="flex items-center">
             {center.map((link) => (
                 <li key={link.href}>

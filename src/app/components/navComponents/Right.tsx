@@ -3,6 +3,7 @@ import Image from "next/image";
 import images from "../../../../public/images";
 
 export default function Right({ selectedIcon, onSelectIcon }: any) {
+    // Stored the configurations for each of the buttons within an array
     const right = [
         { label: "Messages", href: "/messages", icon: images.messages, iconGreen: images.messagesGreen },
         { label: "Notifications", href: "/notification", icon: images.notification, iconGreen: images.notificationGreen },
@@ -10,6 +11,7 @@ export default function Right({ selectedIcon, onSelectIcon }: any) {
     ]
 
     return (
+        // Dynamically iterating and rendering the buttons for the settings where we are tying the configurations to each of the keys in the array.
         <ul className="flex items-center gap-2">
             {right.map((link) => (
                 <li className="flex items-center" key={link.href}>
