@@ -9,11 +9,17 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex border-b-2 border-[#333B43] h-16 items-center mt-2 pb-1.5">
+      <nav className="flex border-b border-[#333B43] h-16 items-center px-4 mt-2 pb-1.5">
+      <div className="flex-1">
         <Left />
+      </div>
+      <div className="flex-1 flex justify-center">
         <Center currentPath={currentPath} />
+      </div>
+      <div className="flex-1 flex justify-end">
         <Right currentPath={currentPath} />
-      </nav>
+      </div>
+    </nav>
     </>
   );
 }

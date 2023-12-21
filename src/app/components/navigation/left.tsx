@@ -12,7 +12,7 @@ export default function Left() {
           <img
             src={images.search}
             draggable="false"
-            className="absolute top-6 left-24 w-5"
+            className="absolute top-6 left-28 w-5"
           />
           <input
             type="text"
