@@ -6,7 +6,7 @@ export default function sideBar() {
   const sideBar = [
     { label: "Profile", href: "/profile", icon: images.profile },
     { label: "Friends", href: "/friends", icon: images.friends },
-    { label: "Group", href:"/group", icon: images.groupColor },
+    { label: "Groups", href:"/group", icon: images.groupColor },
     { label: "Post", href: "/post", icon: images.post },
     { label: "Questions", href:"/questions", icon: images.question },
     { label: "Media", href:"/media", icon: images.play },
