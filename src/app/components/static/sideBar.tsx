@@ -21,7 +21,7 @@ export default function sideBar() {
           <ul>
             {sideBar.map((link) =>
             <li key={link.href} className="mb-1">
-                <Link href={link.href} className="flex items-center ml-6 gap-3 transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-80 h-16">
+                <Link href={link.href} className="flex items-center ml-6 gap-3 transition duration-100 ease-in-out hover:bg-custom-hover hover:shadow-custom-hover rounded w-16 h-16 sm:w-80">
                   <img src={link.icon} alt={`${link.label} Page`} className="ml-3 w-9" />
                   <p className=" text-white font-bold hidden sm:block transition-opacity duration-300 opacity-0 md:opacity-100">{link.label}</p>
                 </Link>
