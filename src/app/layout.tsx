@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./components/static/navigation/navBar";
 import SideBar from "./components/static/sideBar";
 import Footer from "./components/static/footer";
+import Login from "./components/register/login";
 
 export const metadata: Metadata = {
   title: "Code Culture",
@@ -16,9 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar />
+        <Login  />
+        {/* <NavBar />
         <SideBar />
-        <Footer />
+        <Footer /> */}
         {children}
       </body>
     </html>
