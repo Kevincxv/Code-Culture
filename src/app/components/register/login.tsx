@@ -17,9 +17,9 @@ export default function login() {
         <p className="ml-44">around the world</p>
       </div>
       <form className="flex flex-col items-end font-bold text-white mr-60 mb-2 mt-28">
-        <div className="flex flex-col bg-[#333B43] items-center p-6 rounded-lg">
+        <div className="flex flex-col bg-[#333B43] items-center p-4 rounded-lg">
           <div className="flex flex-col gap-1">
-            <label className="text-xl">Username or Email</label>
+            <label className="text-lg">Username or Email</label>
             <input
               type="email"
               placeholder="Email or Username"
@@ -27,8 +27,8 @@ export default function login() {
             />
           </div>
           <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-16">
-              <label className="text-xl">Password</label>
+            <div className="flex items-center gap-20">
+              <label className="text-lg">Password</label>
               <Link
                 href="/"
                 className="text-xs text-[#007BFF] hover:text-[#439af6] hover:underline mt-1"
@@ -65,7 +65,7 @@ export default function login() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="flex flex-row font-semibold bg-[#333B43] gap-3 items-center justify-center rounded-lg mb-2 w-80  h-12 p-1 hover:bg-[#718090] transition ease-in-out 300"
+                className="flex flex-row font-semibold bg-[#333B43] gap-3 items-center justify-center rounded-lg mb-2 w-80 h-12 p-1 hover:bg-[#718090] transition ease-in-out 300"
               >
                 <img
                   src={link.icon}
