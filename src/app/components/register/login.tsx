@@ -1,5 +1,6 @@
 import Link from "next/link";
 import images from "../../../../public/images";
+import Footer from "./footer";
 
 export default function login() {
   const auth = [
@@ -12,8 +13,8 @@ export default function login() {
     <>
       <div className="absolute top-64 left-52 font-bold text-white text-3xl">
         <p className="text-8xl text-[#01DF67]">Code Culture</p>
-        <p className="ml-14">Connect with programmers</p>
-        <p className="ml-24">around the world</p>
+        <p className="ml-24">Connect with programmers</p>
+        <p className="ml-44">around the world</p>
       </div>
       <form className="flex flex-col items-end font-bold text-white mr-60 mb-2 mt-28">
         <div className="flex flex-col bg-[#333B43] items-center p-6 rounded-lg">
@@ -77,6 +78,7 @@ export default function login() {
           ))}
         </ul>
       </div>
+      <Footer />
     </>
   );
 }
