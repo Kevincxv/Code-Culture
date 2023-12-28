@@ -1,5 +1,5 @@
 import Link from "next/link";
-import images from "../../../../../public/images";
+import images from "../../../../public/images";
 
 export default function Left() {
   return (
